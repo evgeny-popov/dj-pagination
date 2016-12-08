@@ -327,6 +327,7 @@ def paginate(context, window=DEFAULT_WINDOW, margin=DEFAULT_MARGIN):
             'paginator': paginator,
             'previous_link_decorator': PREVIOUS_LINK_DECORATOR,
             'records': records,
+            'request': context['request'],
         }
         if 'request' in context:
             getvars = context['request'].GET.copy()
